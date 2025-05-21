@@ -23,3 +23,7 @@ A small capacitor C0 (2pF) is placed between the output of the first and second 
 
 ### Output Load
 C1 (2pF) represents a load capacitor, simulating parasitic or external loading.
+
+### Results
+1. Gain Margin - 38.73
+2. Phase Margin - 66.32
