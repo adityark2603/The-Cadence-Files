@@ -4,3 +4,5 @@ An array of inverters is multiple NOT gates (inverters) connected either in seri
 2. Delay elements: Each inverter introduces a small delay, so a chain of inverters can be used to create precise time delays.
 3. Ring oscillators: An odd number of inverters connected in a loop can produce an oscillating signal.
 4. Noise filtering: Helps reshape degraded signals back into sharp digital waveforms.
+
+For this project, I've chosen 4 inverters. The role of capacitors of different capacitance values is to introduce a delay. 
