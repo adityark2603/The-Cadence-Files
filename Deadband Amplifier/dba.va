@@ -1,0 +1,25 @@
+deadband amplifier:
+// VerilogA model for Deadband Amplifier
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module deadband_amp(in, out);
+  input in;
+  output out;
+  electrical in, out;
+
+  parameter real vin_low = -0.5;
+  parameter real vin_high = 0.5;
+  parameter real gain = 1 from (0:inf);
+
+  analog begin
+    if (V(in) >= vin_high) begin
+      V(out) <+ gain * (V(in) - vin_high);
+    end else if (V(in) <= vin_low) begin
+      V(out) <+ gain * (V(in) - vin_low);
+    end else begin
+      V(out) <+ 0;
+    end
+  end
+endmodule
