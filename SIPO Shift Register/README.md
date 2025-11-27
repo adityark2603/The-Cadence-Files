@@ -1,0 +1,1 @@
+A SIPO register is a type of shift register that accepts data serially (one bit at a time) and outputs the stored data in parallel. With each clock pulse, the input bit is shifted into the register, moving previous bits through the flip-flops. After all bits are shifted in, the register provides the entire data word simultaneously through its parallel output lines.
